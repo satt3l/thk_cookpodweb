@@ -1,0 +1,58 @@
+name: Run CI
+on: 
+  push:
+    branches-ignore:
+      # just in case wil be nice to have a NO CI brancher
+      - 'noci/**'
+
+
+jobs:
+  test:
+    env:
+      MIX_ENV: test
+    runs-on: ubuntu-latest
+    container: elixir:latest
+
+    services:
+      postgres:
+        image: postgres
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_PASSWORD: 'postgres'
+          POSTGRES_USER: 'postgres'
+          POSTGRES_DB: 'cookpod'
+
+    steps:
+
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: install deps
+        run: |
+          mix local.hex --force
+          mix local.rebar --force
+          mix archive.install hex phx_new
+          mix deps.get
+
+      - name: mix format
+        run: mix format --check-formatted
+
+      - name: mix credo
+        run: mix credo
+
+      - name: mix test
+        run: mix test
+
+      - name: mix dialyzer
+        run: mix dialyzer
+        continue-on-error: true
+      - name: coverage
+        shell: bash
+        run: |
+          mix do compile --warnings-as-errors, coveralls.json 
+          bash <(curl -s https://codecov.io/bash)
+
+
+#     - name: Codecliemt
+#       run:
+#     - name: code coverage

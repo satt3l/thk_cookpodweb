@@ -4,8 +4,8 @@ use Mix.Config
 config :cookpod, Cookpod.Repo,
   username: "postgres",
   password: "postgres",
-  database: "cookpod_dev",
-  hostname: "localhost",
+  database: "cookpod",
+  hostname: "postgres",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
