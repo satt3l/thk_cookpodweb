@@ -50,7 +50,8 @@ defmodule Cookpod.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:credo, "~> 1.3", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.5.7", only: :test},
-      {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
+      {:phoenix_slime, "~> 0.13"}
     ]
   end
 
