@@ -4,8 +4,8 @@ use Mix.Config
 config :cookpod, Cookpod.Repo,
   username: "postgres",
   password: "postgres",
-  database: "cookpod_test",
-  hostname: "localhost",
+  database: "cookpod",
+  hostname: "postgres",
   pool: Ecto.Adapters.SQL.Sandbox
 
 # We don't run a server during test. If one is required,
