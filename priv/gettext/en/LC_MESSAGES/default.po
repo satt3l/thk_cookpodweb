@@ -1,0 +1,2 @@
+msgid "terms"
+msgstr "These terms and conditions outline the rules and regulations for the use of phoenix web cource's Website, located at http://cookbpod.mabelly.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use cookbpod.mabelly.com if you do not agree to take all of the terms and conditions stated on this page. Our Terms and Conditions were created with the help of the Terms And Conditions Generator and the Free Terms & Conditions Generator."

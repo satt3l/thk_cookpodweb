@@ -1,0 +1,10 @@
+h1.display-5 Terms and Conditions
+
+
+h2 = "#{@company} proudly announces."
+
+div.container
+  div.terms
+    p.lead
+     |
+      #{gettext "terms"}

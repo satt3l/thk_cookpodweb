@@ -16,7 +16,7 @@ config :cookpod, Cookpod.Repo,
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :cookpod, CookpodWeb.Endpoint,
-  http: [port: 4000],
+  http: [port: 4000, ip: {0, 0, 0, 0}],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -61,7 +61,11 @@ config :cookpod, CookpodWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/cookpod_web/(live|views)/.*(ex)$",
-      ~r"lib/cookpod_web/templates/.*(eex)$"
+      ~r"lib/cookpod_web/templates/.*(eex)$",
+      # Slime stuff
+      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif)$},
+      ~r{web/views/.*(ex)$},
+      ~r{lib/APP_web/templates/.*(eex|slim|slime)$}
     ]
   ]
 
