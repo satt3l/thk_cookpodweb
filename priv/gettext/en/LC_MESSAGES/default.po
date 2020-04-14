@@ -1,2 +1,8 @@
-msgid "terms"
-msgstr "These terms and conditions outline the rules and regulations for the use of phoenix web cource's Website, located at http://cookbpod.mabelly.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use cookbpod.mabelly.com if you do not agree to take all of the terms and conditions stated on this page. Our Terms and Conditions were created with the help of the Terms And Conditions Generator and the Free Terms & Conditions Generator."
+#: lib/cookpod_web/templates/page/index.html.eex:2
+msgid "Welcome to %{name}!"
+msgstr ""
+
+#, elixir-format
+#: lib/cookpod_web/templates/page/terms.html.slime:1
+msgid "These terms and conditions outline the rules and regulations for the use of phoenix web cource's Website, located at http://cookbpod.mabelly.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use cookbpod.mabelly.com if you do not agree to take all of the terms and conditions stated on this page. Our Terms and Conditions were created with the help of the Terms And Conditions Generator and the Free Terms & Conditions Generator."
+msgstr ""

@@ -1,0 +1,23 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Plural-Forms: nplurals=3\n"
+
+#, elixir-format
+#: lib/cookpod_web/templates/page/index.html.eex:2
+msgid "Welcome to %{name}!"
+msgstr ""
+
+#, elixir-format
+#: lib/cookpod_web/templates/page/terms.html.slime:1
+
+msgid "These terms and conditions outline the rules and regulations for the use of phoenix web cource's Website, located at http://cookbpod.mabelly.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use cookbpod.mabelly.com if you do not agree to take all of the terms and conditions stated on this page. Our Terms and Conditions were created with the help of the Terms And Conditions Generator and the Free Terms & Conditions Generator.terms"
+msgstr "В этих положениях и условиях изложены правила и положения использования веб-сайта phoenix web cource, расположенного по адресу http://cookbpod.mabelly.com. Заходя на этот сайт, мы предполагаем, что вы принимаете эти условия. Не продолжайте использовать cookbpod.mabelly.com, если вы не согласны принять все условия, изложенные на этой странице. Наши Условия были созданы с помощью Генератора Условий и Условий и Генератора Свободных Условий."
