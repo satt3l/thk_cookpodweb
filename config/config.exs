@@ -23,8 +23,15 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+config :phoenix, :template_engines,
+  slim: PhoenixSlime.Engine,
+  slime: PhoenixSlime.Engine
+
+# slimleex: PhoenixSlime.LiveViewEngine # If you want to use LiveView not sure what it is, disable it for now
+
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
+config :cookpod, CookpodWeb.Gettext, default_locale: "en", locales: ~w(en ru)
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
